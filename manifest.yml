@@ -1,0 +1,8 @@
+---
+applications:
+- name: keycloak-redirect-prod
+  buildpacks:
+  - ruby_buildpack
+  processes:
+    - type: web
+      command: rackup -p $PORT
